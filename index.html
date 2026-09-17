@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Guimarães - Currículo</title>
+    <style>
+        /* Variáveis de Cores */
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --primary: #0284c7;
+            --border: #e2e8f0;
+        }
+
+        /* Reset e Base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Cabeçalho */
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #0f172a;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+
+        /* Seções Gerais */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #1e293b;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #334155;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        /* Badges/Skills */
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .badges img {
+            height: 28px;
+            border-radius: 4px;
+        }
+
+        /* Experiência Profissional */
+        .job-card {
+            margin-bottom: 25px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .job-company {
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .job-date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            background: #f1f5f9;
+            padding: 4px 10px;
+            border-radius: 15px;
+        }
+
+        ul {
+            margin-top: 12px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Tabela de Educação */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        /* Contato */
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .contact-links a {
+            transition: transform 0.2s;
+        }
+
+        .contact-links a:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+            .job-date {
+                margin-top: 5px;
+                display: inline-block;
+            }
+            table, thead, tbody, th, td, tr { 
+                display: block; 
+            }
+            th { display: none; }
+            td {
+                padding-left: 50%;
+                position: relative;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 45%;
+                padding-left: 15px;
+                font-weight: bold;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- CABEÇALHO -->
+        <header>
+            <h1>Olá, eu sou Felipe Guimarães 👋</h1>
+            <p class="subtitle">Analista de Sistemas | Sistemas Corporativos e ERP | SQL | Ciência de Dados em formação</p>
+            
+            <p class="intro">Atuo na conexão entre tecnologia, dados e processos de negócio para diagnosticar problemas, sustentar sistemas corporativos e apoiar melhorias contínuas.</p>
+            <p class="intro">Minha experiência reúne desenvolvimento, análise e sustentação de sistemas, com atuação em <strong>ERP Senior e SAP</strong>, investigação de dados com <strong>SQL</strong>, integrações, testes e homologação. Tenho perfil analítico e experiência com levantamento de requisitos, regras de negócio e mapeamento de processos <strong>AS-IS/TO-BE e BPM</strong>.</p>
+            
+            <p style="margin-top: 15px; color: var(--text-muted);">
+                🎓 Em formação em <strong>Análise e Desenvolvimento de Sistemas</strong> e <strong>Ciência de Dados</strong>.<br>
+                🌎 Inglês avançado.
+            </p>
+        </header>
+
+        <!-- COMPETÊNCIAS TÉCNICAS -->
+        <section>
+            <h2>🛠️ Competências técnicas</h2>
+
+            <h3>Desenvolvimento e integrações</h3>
+            <div class="badges">
+                <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge" alt="Java">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                <img src="https://img.shields.io/badge/APIs-0F766E?style=for-the-badge" alt="APIs">
+                <img src="https://img.shields.io/badge/REST-0284C7?style=for-the-badge" alt="REST">
+                <img src="https://img.shields.io/badge/Web_Services-475569?style=for-the-badge" alt="Web Services">
+            </div>
+
+            <h3>Bancos de dados</h3>
+            <div class="badges">
+                <img src="https://img.shields.io/badge/SQL-334155?style=for-the-badge" alt="SQL">
+                <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge" alt="SQL Server">
+                <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                <img src="https://img.shields.io/badge/SAP_HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" alt="SAP HANA">
+            </div>
+
+            <h3>Sistemas corporativos</h3>
+            <div class="badges">
+                <img src="https://img.shields.io/badge/ERP_Senior-008C72?style=for-the-badge" alt="ERP Senior">
+                <img src="https://img.shields.io/badge/SAP-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" alt="SAP">
+                <img src="https://img.shields.io/badge/Backoffice-475569?style=for-the-badge" alt="Backoffice">
+                <img src="https://img.shields.io/badge/Sistemas_Legados-64748B?style=for-the-badge" alt="Sistemas Legados">
+            </div>
+
+            <h3>Processos e metodologias</h3>
+            <div class="badges">
+                <img src="https://img.shields.io/badge/Scrum-6D28D9?style=for-the-badge" alt="Scrum">
+                <img src="https://img.shields.io/badge/Kanban-7C3AED?style=for-the-badge" alt="Kanban">
+                <img src="https://img.shields.io/badge/ITIL-4338CA?style=for-the-badge" alt="ITIL">
+                <img src="https://img.shields.io/badge/BPM-0369A1?style=for-the-badge" alt="BPM">
+                <img src="https://img.shields.io/badge/AS--IS_/_TO--BE-0F766E?style=for-the-badge" alt="AS-IS / TO-BE">
+            </div>
+
+            <p style="margin-top: 15px; font-size: 0.95rem;">
+                <strong>Práticas aplicadas:</strong> levantamento de requisitos, análise de regras de negócio, troubleshooting, análise de logs, gestão de incidentes, testes, homologação e documentação técnica.
+            </p>
+        </section>
+
+        <!-- EXPERIÊNCIA PROFISSIONAL -->
+        <section>
+            <h2>💼 Experiência profissional</h2>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <h3>Analista de Sistemas</h3>
+                    <span class="job-date">2026 – Atual</span>
+                </div>
+                <div class="job-company">Transportes e Armazenagem Zilli Ltda.</div>
+                <ul>
+                    <li>Sustentação do <strong>ERP Senior</strong> em processos de logística e transporte, com diagnóstico e resolução de incidentes por meio de <strong>consultas SQL</strong>.</li>
+                    <li>Análise de regras de negócio, identificação de inconsistências e parametrização de sistemas conforme necessidades operacionais e fiscais.</li>
+                    <li>Atuação em <strong>integrações entre sistemas</strong>, melhorias de processos internos, testes e homologação de soluções.</li>
+                    <li>Treinamentos com <strong>KeyUsers</strong> para apoiar a utilização do sistema e a melhoria dos processos.</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <h3>Analista de Produto I — Sustentação</h3>
+                    <span class="job-date">2025 – 2026</span>
+                </div>
+                <div class="job-company">Invent Software Ltda.</div>
+                <ul>
+                    <li>Sustentação e evolução de sistemas <strong>SAP</strong>, com análise e resolução de incidentes.</li>
+                    <li>Investigação de dados com <strong>SQL no SAP HANA</strong>, incluindo procedures e customizações internas para diagnosticar inconsistências.</li>
+                    <li>Reprodução de cenários, alinhamento de chamados com clientes e escalonamento de tickets de N1 para N2.</li>
+                    <li>Documentação de casos e soluções para apoiar consultas e atendimentos posteriores.</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <h3>Suporte Técnico</h3>
+                    <span class="job-date">2024 – 2025</span>
+                </div>
+                <div class="job-company">Santri Serviços</div>
+                <ul>
+                    <li>Triagem de incidentes em <strong>ERP</strong> e execução de <strong>consultas SQL</strong> para apoiar a resolução de ocorrências.</li>
+                    <li>Atualizações mensais do <strong>sistema ADM</strong>, contribuindo para a estabilidade e a continuidade operacional.</li>
+                    <li>Elaboração de relatórios estruturados para apoiar a análise técnica e o acompanhamento de chamados.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO ACADÊMICA -->
+        <section>
+            <h2>🎓 Formação acadêmica</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Instituição</th>
+                        <th>Previsão de conclusão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Curso">Análise e Desenvolvimento de Sistemas</td>
+                        <td data-label="Instituição">UNIASSELVI</td>
+                        <td data-label="Conclusão">Julho de 2027</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Curso">Técnico em Ciência de Dados</td>
+                        <td data-label="Instituição">Escola do Futuro de Goiás — EFG</td>
+                        <td data-label="Conclusão">Junho de 2027</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- CONTATO -->
+        <section>
+            <h2>📫 Vamos conversar?</h2>
+            <p>Tenho interesse em trocar experiências sobre <strong>análise de sistemas, dados, integrações e melhoria de processos corporativos</strong>.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:felipecguimaraes.003@gmail.com" target="_blank">
+                    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/felipecguimar%C3%A3es" target="_blank">
+                    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/felipeccguimaraes003-png" target="_blank">
+                    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                </a>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
