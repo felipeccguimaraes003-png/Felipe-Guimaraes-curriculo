@@ -1,18 +1,18 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Currículo de Felipe Guimarães: Analista de Sistemas com experiência em ERP, SAP, SQL, regras de negócio e suporte a clientes.">
-    <title>Felipe Guimarães — Currículo</title>
+    <title>Felipe Guimarães - Currículo</title>
 
     <style>
         :root {
             --bg-color: #f8fafc;
             --card-bg: #ffffff;
             --text-main: #334155;
-            --text-muted: #475569;
-            --primary: #0369a1;
+            --text-muted: #64748b;
+            --primary: #0284c7;
             --border: #e2e8f0;
         }
 
@@ -24,53 +24,53 @@
 
         body {
             font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: var(--bg-color);
+            background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.7;
-            padding: 24px;
+            line-height: 1.6;
+            padding: 20px;
         }
 
         .container {
-            max-width: 960px;
+            max-width: 900px;
             margin: 0 auto;
+            background-color: var(--card-bg);
             padding: 40px;
-            background: var(--card-bg);
             border-radius: 12px;
-            box-shadow: 0 4px 16px rgb(15 23 42 / 8%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         header {
-            padding-bottom: 28px;
-            margin-bottom: 32px;
             border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         h1 {
-            margin-bottom: 12px;
+            font-size: 2.5rem;
+            line-height: 1.3;
             color: #0f172a;
-            font-size: clamp(1.8rem, 5vw, 2.5rem);
-            line-height: 1.25;
+            margin-bottom: 12px;
         }
 
         .subtitle {
-            margin-bottom: 20px;
+            font-size: 1.2rem;
             color: var(--primary);
-            font-size: 1.15rem;
             font-weight: 600;
+            margin-bottom: 15px;
         }
 
         .intro {
-            margin-bottom: 14px;
             font-size: 1.05rem;
+            margin-bottom: 15px;
         }
 
         .profile-details {
-            margin-top: 18px;
+            margin-top: 15px;
             color: var(--text-muted);
         }
 
         section {
-            margin-bottom: 36px;
+            margin-bottom: 35px;
         }
 
         section:last-child {
@@ -78,29 +78,23 @@
         }
 
         h2 {
-            margin-bottom: 20px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid var(--border);
+            font-size: 1.8rem;
             color: #1e293b;
-            font-size: clamp(1.4rem, 4vw, 1.8rem);
-            line-height: 1.4;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
         }
 
         h3 {
-            margin: 20px 0 10px;
+            font-size: 1.2rem;
             color: #334155;
-            font-size: 1.15rem;
-        }
-
-        .badges,
-        .contact-links {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 8px;
+            margin: 20px 0 10px;
         }
 
         .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
             margin-bottom: 20px;
         }
 
@@ -112,48 +106,18 @@
             border-radius: 4px;
         }
 
-        .practices {
-            margin-top: 16px;
-        }
-
         .job-card {
-            margin-bottom: 26px;
-        }
-
-        .job-card:last-child {
-            margin-bottom: 0;
-        }
-
-        .job-header {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 8px 16px;
-            margin-bottom: 6px;
-        }
-
-        .job-header h3 {
-            margin: 0;
+            margin-bottom: 25px;
         }
 
         .job-company {
-            color: var(--text-muted);
             font-weight: 600;
-        }
-
-        .job-date {
-            padding: 4px 12px;
-            border-radius: 16px;
-            background: #f1f5f9;
             color: var(--text-muted);
-            font-size: 0.9rem;
-            white-space: nowrap;
         }
 
         ul {
             margin-top: 12px;
-            padding-left: 22px;
+            padding-left: 20px;
         }
 
         li {
@@ -167,42 +131,34 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 10px;
         }
 
         th,
         td {
-            padding: 14px 12px;
-            border-bottom: 1px solid var(--border);
             text-align: left;
             vertical-align: top;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
         }
 
         th {
-            background: var(--bg-color);
+            background-color: var(--bg-color);
             font-weight: 600;
         }
 
-        .contact-text p + p {
-            margin-top: 12px;
-        }
-
         .contact-links {
-            gap: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
             margin-top: 20px;
         }
 
         .contact-links a {
-            display: inline-flex;
-            padding: 8px 0;
-            border-radius: 4px;
-            transition: transform 0.2s ease;
+            display: inline-block;
         }
 
-        .contact-links a:hover {
-            transform: translateY(-3px);
-        }
-
-        a:focus-visible {
+        .contact-links a:focus-visible {
             outline: 3px solid var(--primary);
             outline-offset: 4px;
         }
@@ -213,53 +169,26 @@
             }
 
             .container {
-                padding: 24px 18px;
+                padding: 20px;
             }
 
-            .job-header {
-                flex-direction: column;
-                align-items: flex-start;
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.05rem;
             }
 
             th,
             td {
                 padding: 10px 8px;
-                font-size: 0.875rem;
+                font-size: 0.85rem;
                 overflow-wrap: anywhere;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .contact-links a {
-                transition: none;
-            }
-
-            .contact-links a:hover {
-                transform: none;
-            }
-        }
-
-        @media print {
-            body {
-                padding: 0;
-                background: white;
-            }
-
-            .container {
-                max-width: none;
-                padding: 0;
-                border-radius: 0;
-                box-shadow: none;
-            }
-
-            .job-card,
-            tr {
-                break-inside: avoid;
-            }
-
-            h2,
-            h3 {
-                break-after: avoid;
             }
         }
     </style>
@@ -270,44 +199,21 @@
         <header>
             <h1>Olá, eu sou Felipe Guimarães 👋</h1>
 
-            <p class="subtitle">
-                Analista de Sistemas | Regras de negócio e ERP | SQL |
-                Ciência de Dados em formação | SAP | Python | Suporte a clientes
-            </p>
+            <p class="subtitle">Analista de Sistemas | Regras de negócio e ERP | SQL | Ciência de Dados em formação | SAP | PYTHON | Suporte a clientes</p>
 
-            <p class="intro">
-                Minha experiência reúne desenvolvimento, análise e sustentação de
-                sistemas, com atuação em <strong>ERP Senior e SAP</strong>,
-                investigação de dados com <strong>SQL</strong>, integrações,
-                testes e homologação.
-            </p>
-
-            <p class="intro">
-                Tenho perfil analítico e experiência com levantamento de
-                requisitos, regras de negócio, atendimento a clientes, reforma
-                tributária, SLA e mapeamento de processos
-                <strong>AS-IS/TO-BE e BPM</strong>, com resiliência e organização.
-            </p>
-
-            <p class="intro">
-                Os conhecimentos que apliquei nas minhas experiências
-                profissionais estão ligados aos fundamentos do
-                <strong>ITIL</strong>, orientando minha atuação pelas boas
-                práticas de um profissional de TI.
-            </p>
+            <p class="intro">Minha experiência reúne desenvolvimento, análise e sustentação de sistemas, com atuação em ERP Senior, SAP, investigação de dados com SQL, integrações, testes e homologação. Tenho perfil analítico e experiência com levantamento de requisitos, regras de negócio, atendimento a clientes, reforma tributaira, SLA, resiliência, organização e mapeamento de processos <strong>AS-IS/TO-BE e BPM</strong> e todos os conhecimentos que apliquei em minhas experiências profissionais estão muito ligadas aos fundamentos do ITIL, concentro meu conhecimento todo nas boas praticas de um profissional de TI.</p>
 
             <p class="profile-details">
-                🎓 Em formação em
-                <strong>Análise e Desenvolvimento de Sistemas</strong> e
-                <strong>Ciência de Dados</strong>.<br>
+                🎓 Em formação em <strong>Análise e Desenvolvimento de Sistemas</strong> e <strong>Ciência de Dados</strong>.<br>
                 🌎 Inglês avançado.
             </p>
         </header>
 
-        <section aria-labelledby="competencias">
-            <h2 id="competencias">🛠️ Competências técnicas</h2>
+        <section>
+            <h2>🛠️ Competências técnicas</h2>
 
             <h3>Desenvolvimento e integrações</h3>
+
             <div class="badges">
                 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge" alt="Java">
                 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="Python">
@@ -317,6 +223,7 @@
             </div>
 
             <h3>Bancos de dados</h3>
+
             <div class="badges">
                 <img src="https://img.shields.io/badge/SQL-334155?style=for-the-badge" alt="SQL">
                 <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge" alt="SQL Server">
@@ -325,6 +232,7 @@
             </div>
 
             <h3>Sistemas corporativos</h3>
+
             <div class="badges">
                 <img src="https://img.shields.io/badge/ERP_Senior-008C72?style=for-the-badge" alt="ERP Senior">
                 <img src="https://img.shields.io/badge/SAP-0FAAFF?style=for-the-badge&amp;logo=sap&amp;logoColor=white" alt="SAP">
@@ -333,6 +241,7 @@
             </div>
 
             <h3>Processos e metodologias</h3>
+
             <div class="badges">
                 <img src="https://img.shields.io/badge/Scrum-6D28D9?style=for-the-badge" alt="Scrum">
                 <img src="https://img.shields.io/badge/Kanban-7C3AED?style=for-the-badge" alt="Kanban">
@@ -341,112 +250,53 @@
                 <img src="https://img.shields.io/badge/AS--IS_/_TO--BE-0F766E?style=for-the-badge" alt="AS-IS / TO-BE">
             </div>
 
-            <p class="practices">
-                <strong>Práticas aplicadas:</strong> levantamento de requisitos,
-                análise de regras de negócio, troubleshooting, análise de logs,
-                gestão de incidentes, testes, homologação e documentação técnica.
-            </p>
+            <p><strong>Práticas aplicadas:</strong> levantamento de requisitos, análise de regras de negócio, troubleshooting, análise de logs, gestão de incidentes, testes, homologação e documentação técnica.</p>
         </section>
 
-        <section aria-labelledby="experiencia">
-            <h2 id="experiencia">💼 Experiência profissional</h2>
+        <section>
+            <h2>💼 Experiência profissional</h2>
 
             <article class="job-card">
-                <div class="job-header">
-                    <h3>Analista de Sistemas</h3>
-                    <span class="job-date">2026 – Atual</span>
-                </div>
-                <p class="job-company">Transportes e Armazenagem Zilli Ltda.</p>
+                <h3>Analista de Sistemas</h3>
+                <p class="job-company">Transportes e Armazenagem Zilli Ltda. | 2026 – Atual</p>
 
                 <ul>
-                    <li>
-                        Sustentação das <strong>soluções Senior (ERP, HCM, TMS,
-                        WMS)</strong> em processos de logística e transporte,
-                        com diagnóstico, criação de relatórios e resolução de
-                        incidentes por meio de <strong>consultas SQL</strong>.
-                    </li>
-                    <li>
-                        Análise de regras de negócio, identificação de
-                        inconsistências e parametrização de sistemas conforme
-                        necessidades operacionais e fiscais.
-                    </li>
-                    <li>
-                        Atuação em integrações entre sistemas, melhorias de
-                        processos internos, criação de processos internos por
-                        meio do <strong>Bizagi</strong>, testes e homologação
-                        de soluções.
-                    </li>
-                    <li>
-                        Treinamentos com <strong>KeyUsers</strong> para apoiar
-                        a utilização do sistema e a melhoria dos processos.
-                    </li>
+                    <li>Sustentação das soluções Senior (ERP, HCM, TMS, WMS) em processos de logística e transporte, com diagnóstico, criação de relatorios e resolução de incidentes por meio de consultas SQL.</li>
+                    <li>Análise de regras de negócio, identificação de inconsistências e parametrização de sistemas conforme necessidades operacionais e fiscais.</li>
+                    <li>Atuação em integrações entre sistemas, melhorias de processos internos, criação de processos internos por meio do Bizagi, testes e homologação de soluções.</li>
+                    <li>Treinamentos com KeyUsers para apoiar a utilização do sistema e a melhoria dos processos.</li>
                 </ul>
             </article>
 
             <article class="job-card">
-                <div class="job-header">
-                    <h3>Analista de Produto I — Sustentação</h3>
-                    <span class="job-date">2025 – 2026</span>
-                </div>
-                <p class="job-company">Invent Software Ltda.</p>
+                <h3>Analista de Produto I — Sustentação</h3>
+                <p class="job-company">Invent Software Ltda. | 2025 – 2026</p>
 
                 <ul>
-                    <li>
-                        Sustentação e evolução de sistemas <strong>SAP</strong>,
-                        com análise e resolução de incidentes em
-                        <strong>Notas Fiscais de Serviço</strong>, conforme
-                        regras fiscais da reforma tributária.
-                    </li>
-                    <li>
-                        Investigação de dados com <strong>SQL no SAP HANA</strong>,
-                        incluindo procedures e customizações internas para
-                        diagnosticar inconsistências.
-                    </li>
-                    <li>
-                        Reprodução de cenários, alinhamento de chamados com
-                        clientes e escalonamento de tickets de N1 para N2.
-                    </li>
-                    <li>
-                        Documentação de casos e soluções para apoiar consultas
-                        e atendimentos posteriores.
-                    </li>
+                    <li>Sustentação e evolução de sistemas SAP, com análise e resolução de incidentes em Notas Fiscais de Serviço, conforme regras fiscais da Reforma Triburaria.</li>
+                    <li>Investigação de dados com SQL no SAP HANA, incluindo procedures e customizações internas para diagnosticar inconsistências.</li>
+                    <li>Reprodução de cenários, alinhamento de chamados com clientes e escalonamento de tickets de N1 para N2.</li>
+                    <li>Documentação de casos e soluções para apoiar consultas e atendimentos posteriores.</li>
                 </ul>
             </article>
 
             <article class="job-card">
-                <div class="job-header">
-                    <h3>Suporte Técnico</h3>
-                    <span class="job-date">2024 – 2025</span>
-                </div>
-                <p class="job-company">Santri Serviços</p>
+                <h3>Suporte Técnico</h3>
+                <p class="job-company">Santri Serviços | 2024 – 2025</p>
 
                 <ul>
-                    <li>
-                        Análise de incidentes em <strong>ERP</strong> e execução
-                        de <strong>consultas SQL</strong> para apoiar a resolução
-                        de ocorrências.
-                    </li>
-                    <li>
-                        Atualizações mensais do <strong>sistema ADM</strong>,
-                        contribuindo para a estabilidade e a continuidade
-                        operacional.
-                    </li>
-                    <li>
-                        Suporte direto aos servidores dos clientes Santri para
-                        correção de problemas relacionados a bancos de dados
-                        e servidores, incluindo erros no
-                        <strong>Windows e Linux</strong> para a devida integração
-                        com o sistema.
-                    </li>
+                    <li>Análise de incidentes em <strong>ERP</strong> e execução de <strong>consultas SQL</strong> para apoiar a resolução de ocorrências.</li>
+                    <li>Atualizações mensais do <strong>sistema ADM</strong>, contribuindo para a estabilidade e a continuidade operacional.</li>
+                    <li>Suporte direto aos servidores dos clientes Santri para correções de problema relacionado a banco de dados e servidores, sendo correções de erros no windows e linux para devida integração com o sistema.</li>
                 </ul>
             </article>
         </section>
 
-        <section aria-labelledby="formacao">
-            <h2 id="formacao">🎓 Formação acadêmica</h2>
+        <section>
+            <h2>🎓 Formação acadêmica</h2>
 
             <div class="table-wrapper">
-                <table aria-labelledby="formacao">
+                <table>
                     <thead>
                         <tr>
                             <th scope="col">Curso</th>
@@ -470,41 +320,21 @@
             </div>
         </section>
 
-        <section aria-labelledby="contato">
-            <h2 id="contato">📫 Vamos conversar?</h2>
+        <section>
+            <h2>📫 Vamos conversar?</h2>
 
-            <div class="contact-text">
-                <p>
-                    Tenho muita determinação em realizar meus sonhos e venho me
-                    capacitando cada vez mais para ser o profissional que o
-                    mercado espera. Estou em busca de uma oportunidade na área
-                    que possa impulsionar meu desenvolvimento profissional,
-                    proporcionando mais estabilidade para minha vida pessoal
-                    e meus estudos.
-                </p>
-                <p>
-                    Agradeço por ter lido até aqui. Espero que possamos nos
-                    conhecer e conversar melhor sobre as ideias apresentadas.
-                </p>
-            </div>
+            <p>Tenho muita determinação em realizar os meus sonhos e venho me capacitando cada vez mais para ser o profissional que o mercado espera, estou em busca de uma oportunidade na área que possa me alavancar como profissional, me proporcionando uma melhor estabilidade na minha vida pessoal e estudos. Agradeço se leu até aqui, espero de verdade que possamos nos conhecer para discutirmos melhor as ideias postas aqui.</p>
 
             <div class="contact-links">
-                <a href="mailto:felipecguimaraes.003@gmail.com"
-                   aria-label="Enviar e-mail para Felipe Guimarães">
+                <a href="mailto:felipecguimaraes.003@gmail.com">
                     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email">
                 </a>
 
-                <a href="https://www.linkedin.com/in/felipecguimar%C3%A3es"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Abrir LinkedIn de Felipe Guimarães em nova aba">
+                <a href="https://www.linkedin.com/in/felipecguimar%C3%A3es" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn">
                 </a>
 
-                <a href="https://wa.me/5562982214794"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Conversar com Felipe Guimarães pelo WhatsApp em nova aba">
+                <a href="https://wa.me/5562982214794" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&amp;logo=whatsapp&amp;logoColor=white" alt="WhatsApp">
                 </a>
             </div>
@@ -512,3 +342,4 @@
     </main>
 </body>
 </html>
+```
