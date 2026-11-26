@@ -197,11 +197,36 @@
                 font-size: 1.05rem;
             }
 
-            th,
+            thead {
+                display: none;
+            }
+
+            table,
+            tbody,
+            tr,
             td {
-                padding: 10px 8px;
-                font-size: 0.85rem;
-                overflow-wrap: anywhere;
+                display: block;
+                width: 100%;
+            }
+
+            tr {
+                padding: 12px 0;
+                border-bottom: 1px solid var(--border);
+            }
+
+            td {
+                padding: 2px 0;
+                border-bottom: 0;
+            }
+
+            td:first-child {
+                font-weight: 600;
+                color: #0f172a;
+            }
+
+            td[data-label]::before {
+                content: attr(data-label) ": ";
+                color: var(--text-muted);
             }
         }
     </style>
@@ -381,12 +406,12 @@
                         <tr>
                             <td>Análise e Desenvolvimento de Sistemas (Tecnólogo)</td>
                             <td>UNIASSELVI</td>
-                            <td>Julho de 2027</td>
+                            <td data-label="Previsão de conclusão">Julho de 2027</td>
                         </tr>
                         <tr>
                             <td>Técnico em Ciência de Dados</td>
                             <td>Escola do Futuro de Goiás (EFG Luiz Rassi)</td>
-                            <td>Junho de 2027</td>
+                            <td data-label="Previsão de conclusão">Junho de 2027</td>
                         </tr>
                     </tbody>
                 </table>
